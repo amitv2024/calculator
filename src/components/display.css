@@ -1,0 +1,14 @@
+.display{
+	margin-left: 650px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	width: 800px;
+}
+
+.display>textarea{
+	width: 620px;
+	height: 80px;
+	border-radius: 20px;
+	font-size: 50px;
+
+}
