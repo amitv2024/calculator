@@ -1,0 +1,14 @@
+name: "First workflow file"
+on:
+  workflow_dispatch:
+    inputs:
+      deployEnv:
+        description: "Specify which environment to use"
+        required: true
+        type: environment
+jobs:
+  first-job:
+    steps:
+      - name: Print node version
+        run: |
+          node --version
