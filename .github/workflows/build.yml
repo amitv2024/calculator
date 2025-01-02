@@ -12,3 +12,5 @@ jobs:
       - name: Print node version
         run: |
           node --version
+
+    runs-on: ubuntu-latest
