@@ -18,4 +18,4 @@ jobs:
           ls -lart
       - name: Build docker
         run: |
-          docker build -t calculator:1.0 ./src/
+          docker build -f src/Dockerfile -t calculator:1.0
