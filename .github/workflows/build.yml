@@ -8,9 +8,11 @@ on:
         type: environment
 jobs:
   first-job:
+    runs-on: ubuntu-latest
     steps:
       - name: Print node version
         run: |
           node --version
-
-    runs-on: ubuntu-latest
+      - name: Build docker
+        run: |
+          docker build -t calculator:1.0 ./src
