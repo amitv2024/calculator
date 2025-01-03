@@ -10,9 +10,12 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print node version
+      - name: Print working directory
         run: |
-          node --version
+          pwd
+      - name: list items
+        run: |
+          ls -lart
       - name: Build docker
         run: |
-          docker build -t calculator:1.0 ./src
+          docker build -t calculator:1.0 ./src/
